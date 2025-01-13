@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 9 PTASK</title>
+    <style>
+        /* Base Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            height: 70vh;
+        }
+
+        .welcome .welcome-logo {
+            flex: 1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .welcome .welcome-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .welcome .welcome-message {
+            flex: 2;
+            text-align: center;
+        }
+
+        .welcome .welcome-message h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .welcome .welcome-message p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+            height: 50vh;
+            margin-top: 120px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        .section .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .section .buttons a {
+            margin: 10px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #6a11cb;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 50px;
+        }
+
+        .section .buttons a:hover {
+            background-color: #2575fc;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1024px) {
+            .welcome .welcome-message h1 {
+                font-size: 2rem;
+            }
+
+            .welcome .welcome-message p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 5px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .welcome {
+                flex-direction: column;
+            }
+
+            .welcome .welcome-message h1 {
+                font-size: 1.8rem;
+            }
+
+            .welcome .welcome-message p {
+                font-size: 0.9rem;
+            }
+
+            .section h2 {
+                font-size: 1.6rem;
+            }
+
+            .section p {
+                font-size: 0.9rem;
+            }
+
+            .section .buttons a {
+                font-size: 0.9rem;
+                padding: 10px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .welcome .welcome-message h1 {
+                font-size: 1.5rem;
+            }
+
+            .welcome .welcome-message p {
+                font-size: 0.8rem;
+            }
+
+            nav .logo span {
+                font-size: 1.2rem;
+            }
+
+            nav ul li a {
+                font-size: 0.9rem;
+                padding: 6px 10px;
+            }
+
+            .section h2 {
+                font-size: 1.4rem;
+            }
+
+            .section p {
+                font-size: 0.8rem;
+            }
+
+            .section .buttons a {
+                font-size: 0.8rem;
+                padding: 8px 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="School logo.png" alt="Logo">
+        
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#section">Section</a></li>
+        </ul>
+    </nav>
+
+    <div class="welcome" id="home">
+        <div class="welcome-logo">
+            <img src="School logo.png" alt="Welcome Logo" width="250px">
+        </div>
+        <div class="welcome-message">
+            <h1>Welcome to Grade 9 PTASK</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, perferendis? Ea aperiam sint reprehenderit qui neque error laudantium, cum quos blanditiis dolores vel maxime minima natus et earum soluta voluptate! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, minus saepe. Nisi tenetur, iure sapiente eum pariatur dolorum minima, harum alias suscipit distinctio aut ullam unde aliquam animi saepe deserunt!</p>
+        </div>
+    </div>
+
+    <div class="section" id="section">
+        <h2>About the Section</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, explicabo harum deserunt molestias distinctio ipsam sequi ab, perferendis, nam quis quos eos aliquam impedit. Culpa cum neque suscipit reprehenderit consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odit voluptatibus sunt tenetur, quam, voluptatem at nesciunt vel veniam error deserunt beatae saepe voluptatum eaque quaerat, quia ut odio fugit.</p>
+        <div class="buttons">
+            <a href="#">Grade 9 St. Lucy</a>
+            <a href="#">Grade 9 St. Thomas</a>
+            <a href="#">Grade 9 St. Vincent</a>
+        </div>
+    </div>
+</body>
+</html>
